@@ -86,20 +86,14 @@ const btn = document.querySelector('.btn')
 
 function chekedElement(e) {
     if (e.currentTarget.checked === true) {
-
         arr.push(e.currentTarget.value)
-
         res.innerHTML = arr.reduce((sum, current) => Number(sum) + Number(current), 0)
-
         e.currentTarget.parentNode.parentNode.classList.add('active')
     }
 
     if (e.currentTarget.checked === false) {
-        
         arr.splice(arr.indexOf(e.currentTarget.value), 1)
-
         res.innerHTML = arr.reduce((sum, current) => Number(sum) + Number(current), 0);
-
         e.currentTarget.parentNode.parentNode.classList.remove('active')
     }
 }
