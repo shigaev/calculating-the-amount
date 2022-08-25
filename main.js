@@ -72,7 +72,7 @@ let data = orderCheck.map((item) => {
     if (item.deleted === true) {
         visibility = ""
         message = "deleted"
-        style = "background-color: #ffc7c7;z-index: 1"
+        style = "background-color: #ffc7c7;"
     }
 
     return `
