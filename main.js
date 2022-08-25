@@ -64,16 +64,19 @@ const orderCheck = [{
 const tBody = document.querySelector('.tbody')
 
 let data = orderCheck.map((item) => {
-    
+
     let visibility = "hidden"
     let message = ""
+    let style = ""
 
     if (item.deleted === true) {
         visibility = ""
         message = "deleted"
+        style = "background-color: #ffc7c7;z-index: 1"
     }
+
     return `
-        <tr class="table__data">
+        <tr class="table__data" style="${style}">
             <td>
             <input type="checkbox" value="${item.cost}">${item.id}
             <span class="deleted" ${visibility}>${message}</span>
