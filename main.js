@@ -77,8 +77,8 @@ let data = orderCheck.map((item) => {
 
 tBody.innerHTML = data
 
-const tData = document.querySelectorAll('.table__data')
 const arr = []
+const tData = document.querySelectorAll('.table__data')
 const res = document.querySelector('.result__item')
 const inPut = document.querySelectorAll('input')
 const btn = document.querySelector('.btn')
